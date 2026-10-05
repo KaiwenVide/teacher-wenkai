@@ -1,0 +1,13 @@
+{
+  "checked_files": 72,
+  "known_comparison_files": 182,
+  "exact_matches": [],
+  "python_token_overlap_window": 60,
+  "python_overlap_review_candidates": [],
+  "private_or_secret_findings": [],
+  "forbidden_files": [],
+  "broken_local_links": [],
+  "scope": "Local known-source screening, not a legal opinion or an internet-wide uniqueness guarantee.",
+  "screened_before_generated_audit_manifests": true,
+  "checked_at": "2026-10-05T18:32:04.659449+00:00"
+}

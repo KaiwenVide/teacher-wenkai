@@ -1,0 +1,288 @@
+{
+  "version": "3.0.0",
+  "integration": "native_project_implementation",
+  "providers": {
+    "alphafold": {
+      "bases": [
+        "https://alphafold.ebi.ac.uk/api"
+      ],
+      "protocol": "rest"
+    },
+    "bgee": {
+      "bases": [
+        "https://www.bgee.org"
+      ],
+      "endpoint": "sparql/",
+      "protocol": "sparql"
+    },
+    "bindingdb": {
+      "bases": [
+        "https://bindingdb.org"
+      ],
+      "protocol": "rest"
+    },
+    "biobankjapan-phewas": {
+      "bases": [
+        "https://pheweb.jp"
+      ],
+      "assembly": "GRCh37",
+      "protocol": "phewas"
+    },
+    "biostudies-arrayexpress": {
+      "bases": [
+        "https://www.ebi.ac.uk/biostudies/api/v1"
+      ],
+      "protocol": "rest"
+    },
+    "cbioportal": {
+      "bases": [
+        "https://www.cbioportal.org/api"
+      ],
+      "protocol": "rest"
+    },
+    "cellxgene": {
+      "bases": [
+        "https://api.cellxgene.cziscience.com/curation/v1"
+      ],
+      "protocol": "rest"
+    },
+    "chebi": {
+      "bases": [
+        "https://www.ebi.ac.uk"
+      ],
+      "protocol": "rest"
+    },
+    "chembl": {
+      "bases": [
+        "https://www.ebi.ac.uk/chembl/api/data"
+      ],
+      "protocol": "rest"
+    },
+    "civic": {
+      "bases": [
+        "https://civicdb.org"
+      ],
+      "endpoint": "api/graphql",
+      "protocol": "graphql"
+    },
+    "clinicaltrials": {
+      "bases": [
+        "https://clinicaltrials.gov/api/v2"
+      ],
+      "protocol": "clinicaltrials"
+    },
+    "clinvar-variation": {
+      "bases": [
+        "https://api.ncbi.nlm.nih.gov/variation/v0/beta",
+        "https://clinicaltables.nlm.nih.gov/api/variants/v4",
+        "https://api.ncbi.nlm.nih.gov/variation/v0"
+      ],
+      "protocol": "clinvar"
+    },
+    "efo-ontology": {
+      "bases": [
+        "https://www.ebi.ac.uk/ols4/api"
+      ],
+      "protocol": "rest"
+    },
+    "encode": {
+      "bases": [
+        "https://www.encodeproject.org"
+      ],
+      "protocol": "rest"
+    },
+    "ensembl": {
+      "bases": [
+        "https://rest.ensembl.org"
+      ],
+      "protocol": "rest"
+    },
+    "epigraphdb": {
+      "bases": [
+        "https://api.epigraphdb.org"
+      ],
+      "protocol": "rest"
+    },
+    "eqtl-catalogue": {
+      "bases": [
+        "https://www.ebi.ac.uk/eqtl/api/v3"
+      ],
+      "protocol": "rest",
+      "remote_status": "retired",
+      "documentation": "https://www.ebi.ac.uk/eqtl/Data_access/",
+      "alternative": "Filter an independently obtained local summary-statistics TSV or TSV.GZ using local_file and filters"
+    },
+    "eva": {
+      "bases": [
+        "https://www.ebi.ac.uk/eva/webservices/identifiers/v1",
+        "https://www.ebi.ac.uk/eva/webservices/rest/v1"
+      ],
+      "protocol": "rest"
+    },
+    "finngen-phewas": {
+      "bases": [
+        "https://r12.finngen.fi"
+      ],
+      "assembly": "GRCh38",
+      "protocol": "phewas"
+    },
+    "genebass-gene-burden": {
+      "bases": [
+        "https://main.genebass.org/api"
+      ],
+      "protocol": "genebass"
+    },
+    "gnomad-graphql": {
+      "bases": [
+        "https://gnomad.broadinstitute.org"
+      ],
+      "endpoint": "api",
+      "protocol": "graphql"
+    },
+    "gtex-eqtl": {
+      "bases": [
+        "https://gtexportal.org/api/v2"
+      ],
+      "assembly": "GRCh38",
+      "protocol": "gtex"
+    },
+    "gwas-catalog": {
+      "bases": [
+        "https://www.ebi.ac.uk/gwas/rest/api/v2"
+      ],
+      "protocol": "rest"
+    },
+    "human-protein-atlas": {
+      "bases": [
+        "https://www.proteinatlas.org"
+      ],
+      "protocol": "rest"
+    },
+    "ipd": {
+      "bases": [
+        "https://www.ebi.ac.uk/cgi-bin/ipd/api"
+      ],
+      "protocol": "rest"
+    },
+    "metabolights": {
+      "bases": [
+        "https://www.ebi.ac.uk/metabolights/ws"
+      ],
+      "protocol": "rest"
+    },
+    "mgnify": {
+      "bases": [
+        "https://www.ebi.ac.uk/metagenomics/api/v1"
+      ],
+      "protocol": "rest"
+    },
+    "ncbi-clinicaltables": {
+      "bases": [
+        "https://clinicaltables.nlm.nih.gov/api/ncbi_genes/v3"
+      ],
+      "protocol": "clinicaltables"
+    },
+    "ncbi-datasets": {
+      "bases": [
+        "https://api.ncbi.nlm.nih.gov/datasets/v2"
+      ],
+      "protocol": "rest"
+    },
+    "ncbi-entrez": {
+      "bases": [
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+      ],
+      "protocol": "entrez"
+    },
+    "opentargets": {
+      "bases": [
+        "https://api.platform.opentargets.org"
+      ],
+      "endpoint": "api/v4/graphql",
+      "protocol": "graphql"
+    },
+    "pharmgkb": {
+      "bases": [
+        "https://api.clinpgx.org/v1/data"
+      ],
+      "protocol": "rest"
+    },
+    "pride": {
+      "bases": [
+        "https://www.ebi.ac.uk/pride/ws/archive/v2"
+      ],
+      "protocol": "rest"
+    },
+    "proteomexchange": {
+      "bases": [
+        "https://proteomecentral.proteomexchange.org/api/proxi/v0.1"
+      ],
+      "protocol": "rest"
+    },
+    "pubchem-pug": {
+      "bases": [
+        "https://pubchem.ncbi.nlm.nih.gov/rest/pug"
+      ],
+      "protocol": "rest"
+    },
+    "quickgo": {
+      "bases": [
+        "https://www.ebi.ac.uk/QuickGO/services"
+      ],
+      "protocol": "rest"
+    },
+    "rcsb-pdb": {
+      "bases": [
+        "https://data.rcsb.org/rest/v1",
+        "https://search.rcsb.org/rcsbsearch/v2",
+        "https://www.rcsb.org"
+      ],
+      "protocol": "rest"
+    },
+    "reactome": {
+      "bases": [
+        "https://reactome.org/ContentService"
+      ],
+      "protocol": "rest"
+    },
+    "rhea": {
+      "bases": [
+        "https://sparql.rhea-db.org"
+      ],
+      "endpoint": "sparql",
+      "protocol": "sparql"
+    },
+    "rnacentral": {
+      "bases": [
+        "https://rnacentral.org/api/v1"
+      ],
+      "protocol": "rest"
+    },
+    "string": {
+      "bases": [
+        "https://string-db.org/api/json"
+      ],
+      "protocol": "rest"
+    },
+    "tpmi-phewas": {
+      "bases": [
+        "https://pheweb.ibms.sinica.edu.tw"
+      ],
+      "assembly": "GRCh38",
+      "protocol": "phewas"
+    },
+    "ukb-topmed-phewas": {
+      "bases": [
+        "https://pheweb.org/UKB-TOPMed"
+      ],
+      "assembly": "GRCh38",
+      "protocol": "phewas"
+    },
+    "uniprot": {
+      "bases": [
+        "https://rest.uniprot.org"
+      ],
+      "protocol": "rest"
+    }
+  }
+}

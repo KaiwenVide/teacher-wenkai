@@ -1,0 +1,80 @@
+{
+  "study": {
+    "name": "SYNTHETIC three-group demonstration; not user results",
+    "design": "independent",
+    "data_scale": "log2",
+    "independent_units_confirmed": true,
+    "sample_is_biological_unit": false,
+    "organism": "Homo sapiens",
+    "taxon_id": 9606,
+    "feature_namespace": "gene_symbol"
+  },
+  "input": {
+    "data": "synthetic-assay.csv",
+    "layout": "long"
+  },
+  "columns": {
+    "feature": "Gene",
+    "sample": "Well",
+    "unit": "BiologicalUnit",
+    "technical": "TechnicalReplicate",
+    "group": "Group",
+    "value": "Log2Measurement"
+  },
+  "comparisons": [
+    {
+      "name": "Model_Control",
+      "test": "Model",
+      "reference": "Control"
+    },
+    {
+      "name": "Treatment_Model",
+      "test": "Treatment",
+      "reference": "Model"
+    },
+    {
+      "name": "Treatment_Control",
+      "test": "Treatment",
+      "reference": "Control"
+    }
+  ],
+  "analysis": {
+    "technical_aggregation": "mean",
+    "min_n": 3,
+    "test": "welch",
+    "alpha": 0.05,
+    "minimum_effect": 0.25,
+    "min_detection": 0.7,
+    "fdr_family": "all"
+  },
+  "correlations": {
+    "enabled": true,
+    "features": [
+      "GPX4",
+      "NQO1",
+      "SIRT5"
+    ]
+  },
+  "reversal": {
+    "model_vs_control": "Model_Control",
+    "treatment_vs_model": "Treatment_Model",
+    "treatment_vs_control": "Treatment_Control"
+  },
+  "research": {
+    "public_context": "oxidative stress",
+    "max_signals": 1,
+    "max_queries": 4,
+    "papers_per_query": 3,
+    "sources": [
+      "pubmed",
+      "europepmc"
+    ]
+  },
+  "plots": {
+    "features": [
+      "GPX4",
+      "NQO1",
+      "SIRT5"
+    ]
+  }
+}

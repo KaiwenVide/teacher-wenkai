@@ -1,0 +1,56 @@
+{
+  "records": [
+    {
+      "title": "Treatment and epithelial senescence in a synthetic model",
+      "doi": "10.5555/wkr-example",
+      "year": 2024,
+      "authors": [
+        {
+          "given": "A",
+          "family": "Li"
+        }
+      ],
+      "journal": "Test Journal"
+    },
+    {
+      "title": "Treatment and epithelial senescence in a synthetic model",
+      "doi": "https://doi.org/10.5555/WKR-EXAMPLE",
+      "year": 2024,
+      "authors": [
+        {
+          "given": "A",
+          "family": "Li"
+        }
+      ],
+      "journal": "Test Journal"
+    },
+    {
+      "title": "Treatment and epithelial senescence in a synthetic model",
+      "identifiers": {
+        "arxiv": "2401.00001v1"
+      },
+      "year": 2024,
+      "authors": [
+        {
+          "given": "A",
+          "family": "Li"
+        }
+      ],
+      "journal": "arXiv"
+    },
+    {
+      "title": "Treatment and epithelial senescence in a synthetic model",
+      "identifiers": {
+        "arxiv": "2401.00001v2"
+      },
+      "year": 2024,
+      "authors": [
+        {
+          "given": "A",
+          "family": "Li"
+        }
+      ],
+      "journal": "arXiv"
+    }
+  ]
+}

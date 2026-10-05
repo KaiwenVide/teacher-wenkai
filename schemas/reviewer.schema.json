@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "packet_sha256",
+    "reviewer_id",
+    "isolated_context_id",
+    "status",
+    "findings"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "packet_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "reviewer_id": {
+      "type": "string"
+    },
+    "isolated_context_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "pending",
+        "complete"
+      ]
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "issue",
+          "source_locator",
+          "severity",
+          "resolution_test"
+        ],
+        "properties": {
+          "severity": {
+            "enum": [
+              "Major",
+              "Minor"
+            ]
+          },
+          "blocking": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

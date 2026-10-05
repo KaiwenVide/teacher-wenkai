@@ -1,0 +1,17 @@
+# Independently installed dependencies; their licenses are not replaced by this repository's notice.
+pypdf>=6,<7
+pypdfium2>=5,<6
+Pillow>=10,<13
+jsonschema>=4,<5
+PyYAML>=6,<7
+bibtexparser>=1.4,<2
+numpy>=2,<3
+pandas>=2.2,<3
+scipy>=1.14,<2
+statsmodels>=0.14,<0.15
+matplotlib>=3.9,<4
+openpyxl>=3.1,<4
+nbformat>=5,<6
+nbclient>=0.10,<1
+ipykernel>=6,<8
+pydeseq2>=0.5,<0.6

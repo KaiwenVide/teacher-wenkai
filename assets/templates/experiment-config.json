@@ -1,0 +1,42 @@
+{
+  "study": {
+    "name": "replace_with_study_name",
+    "design": "independent",
+    "data_scale": "linear",
+    "independent_units_confirmed": false,
+    "sample_is_biological_unit": false
+  },
+  "input": {
+    "data": "raw.csv",
+    "layout": "long"
+  },
+  "columns": {
+    "sample": "Sample",
+    "unit": "BiologicalUnit",
+    "feature": "Feature",
+    "value": "Value",
+    "group": "Group"
+  },
+  "comparisons": [
+    {
+      "name": "Treatment_Control",
+      "test": "Treatment",
+      "reference": "Control"
+    }
+  ],
+  "analysis": {
+    "technical_aggregation": "none",
+    "test": "welch",
+    "min_n": 3,
+    "alpha": 0.05,
+    "minimum_effect": 0,
+    "fdr_family": "all"
+  },
+  "research": {
+    "public_context": "",
+    "feature_terms": {},
+    "max_signals": 3,
+    "max_queries": 12,
+    "papers_per_query": 6
+  }
+}

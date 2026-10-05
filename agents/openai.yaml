@@ -1,0 +1,7 @@
+interface:
+  display_name: "teacher Wenkai"
+  short_description: "从原始实验和组学数据出发，串联统计分析、原始证据、实验设计与学术写作"
+  brand_color: "#244C66"
+  default_prompt: "使用 $teacher-wenkai 分析我的常规实验与组学数据，根据可靠趋势和关联继续检索数据库与原始文献，交付可复现结果、证据判断和最小判别实验。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "record_id",
+          "title_abstract_decision"
+        ],
+        "properties": {
+          "record_id": {
+            "type": "string"
+          },
+          "duplicate_of": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "title_abstract_decision": {
+            "enum": [
+              "pending",
+              "include",
+              "exclude"
+            ]
+          },
+          "report_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "retrieval": {
+            "enum": [
+              "pending",
+              "retrieved",
+              "not_retrieved"
+            ]
+          },
+          "fulltext_decision": {
+            "enum": [
+              "pending",
+              "include",
+              "exclude"
+            ]
+          },
+          "study_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "exclusion_reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "assessors": {
+            "type": "array"
+          }
+        }
+      }
+    }
+  }
+}

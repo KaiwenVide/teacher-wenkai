@@ -1,0 +1,458 @@
+{
+  "checked_at": "2026-10-05T18:01:01+00:00",
+  "scope": "One bounded public query per provider. Metadata/connectivity probes are labeled; this does not validate every endpoint, scientific inference, uptime or credentials.",
+  "remote_successes": 42,
+  "providers": [
+    {
+      "provider": "alphafold",
+      "ok": true,
+      "status_code": 200,
+      "count": 2,
+      "error": null,
+      "seconds": 2.8,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "bgee",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.6,
+      "coverage": "metadata_connectivity"
+    },
+    {
+      "provider": "bindingdb",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 2.0,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "biobankjapan-phewas",
+      "ok": true,
+      "status_code": 200,
+      "count": 2,
+      "error": null,
+      "seconds": 1.8,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "biostudies-arrayexpress",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.9,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "cbioportal",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.4,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "cellxgene",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.4,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "chebi",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 2.2,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "chembl",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 6.6,
+      "coverage": "one_public_query",
+      "retested_after_review": true,
+      "request": {
+        "path": "molecule/CHEMBL25.json",
+        "max_items": 2,
+        "max_results": 2,
+        "timeout_sec": 20
+      },
+      "checked_at": "2026-10-05T18:06:02+00:00"
+    },
+    {
+      "provider": "civic",
+      "ok": false,
+      "status_code": null,
+      "count": 0,
+      "error": {
+        "code": "request_failed",
+        "message": "Network request failed for civicdb.org: URLError"
+      },
+      "seconds": 0.9,
+      "coverage": "metadata_connectivity",
+      "diagnostic": "TLS connection ended unexpectedly in this environment; verification was not bypassed",
+      "documentation": "https://docs.civicdb.org/en/latest/api.html"
+    },
+    {
+      "provider": "clinicaltrials",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.4,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "clinvar-variation",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.4,
+      "coverage": "one_public_query",
+      "retested_after_review": true,
+      "request": {
+        "action": "refsnp",
+        "refsnp": "1042522",
+        "max_items": 2,
+        "max_results": 2,
+        "timeout_sec": 20
+      },
+      "checked_at": "2026-10-05T18:05:58+00:00"
+    },
+    {
+      "provider": "efo-ontology",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.7,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "encode",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.2,
+      "coverage": "one_public_query",
+      "retested_after_review": true,
+      "request": {
+        "path": "biosamples/ENCBS000AAA/",
+        "params": {
+          "format": "json"
+        },
+        "max_items": 2,
+        "max_results": 2,
+        "timeout_sec": 20
+      },
+      "checked_at": "2026-10-05T18:05:59+00:00"
+    },
+    {
+      "provider": "ensembl",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 2.7,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "epigraphdb",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 2.9,
+      "coverage": "metadata_connectivity"
+    },
+    {
+      "provider": "eqtl-catalogue",
+      "ok": false,
+      "status_code": 410,
+      "count": 0,
+      "error": {
+        "code": "request_failed",
+        "message": "HTTP 410 from www.ebi.ac.uk"
+      },
+      "seconds": 1.6,
+      "coverage": "one_public_query",
+      "documented_status": "remote_api_retired",
+      "native_alternative": "bounded local TSV/TSV.GZ filtering; covered by regression test",
+      "documentation": "https://www.ebi.ac.uk/eqtl/Data_access/"
+    },
+    {
+      "provider": "eva",
+      "ok": true,
+      "status_code": 200,
+      "count": 2,
+      "error": null,
+      "seconds": 2.1,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "finngen-phewas",
+      "ok": true,
+      "error_type": "ValueError",
+      "error": null,
+      "seconds": 4.1,
+      "status_code": 200,
+      "count": 2,
+      "retested_after_review": true,
+      "request": {
+        "grch38": "10:112998590:C:T",
+        "max_items": 2,
+        "max_results": 2,
+        "timeout_sec": 20
+      },
+      "checked_at": "2026-10-05T18:05:58+00:00"
+    },
+    {
+      "provider": "genebass-gene-burden",
+      "ok": true,
+      "status_code": 200,
+      "count": 2,
+      "error": null,
+      "seconds": 2.4,
+      "coverage": "one_public_query",
+      "retested_after_review": true,
+      "request": {
+        "ensembl_gene_id": "ENSG00000173531",
+        "max_items": 2,
+        "max_results": 2,
+        "timeout_sec": 20
+      },
+      "checked_at": "2026-10-05T18:05:58+00:00"
+    },
+    {
+      "provider": "gnomad-graphql",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.2,
+      "coverage": "metadata_connectivity"
+    },
+    {
+      "provider": "gtex-eqtl",
+      "ok": true,
+      "status_code": 200,
+      "count": 2,
+      "error": null,
+      "seconds": 1.3,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "gwas-catalog",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.6,
+      "coverage": "metadata_connectivity"
+    },
+    {
+      "provider": "human-protein-atlas",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.6,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "ipd",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 2.0,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "metabolights",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.8,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "mgnify",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.8,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "ncbi-clinicaltables",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.4,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "ncbi-datasets",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.6,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "ncbi-entrez",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.4,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "opentargets",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.5,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "pharmgkb",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.4,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "pride",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.8,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "proteomexchange",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.7,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "pubchem-pug",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.4,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "quickgo",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.6,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "rcsb-pdb",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.3,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "reactome",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.2,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "rhea",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.5,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "rnacentral",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 2.4,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "string",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 1.3,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "tpmi-phewas",
+      "ok": true,
+      "status_code": 200,
+      "count": 2,
+      "error": null,
+      "seconds": 2.7,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "ukb-topmed-phewas",
+      "ok": true,
+      "status_code": 200,
+      "count": 2,
+      "error": null,
+      "seconds": 2.1,
+      "coverage": "one_public_query"
+    },
+    {
+      "provider": "uniprot",
+      "ok": true,
+      "status_code": 200,
+      "count": 1,
+      "error": null,
+      "seconds": 3.6,
+      "coverage": "one_public_query"
+    }
+  ]
+}

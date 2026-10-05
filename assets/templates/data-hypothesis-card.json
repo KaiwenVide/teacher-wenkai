@@ -1,0 +1,24 @@
+{
+  "schema_version": "2.0",
+  "signal_id": null,
+  "analysis_id": null,
+  "question": null,
+  "falsifiable_directional_hypothesis": null,
+  "data_source_locations": [],
+  "model_species_time": {},
+  "direct_evidence": [],
+  "cross_model_extrapolation": [],
+  "counterevidence": [],
+  "competing_explanations": [],
+  "claim_support": "not_assessed",
+  "minimal_discriminating_experiment": {
+    "independent_unit": null,
+    "intervention": null,
+    "control": null,
+    "target_dependence_check": null,
+    "primary_readout": null,
+    "outcomes_distinguishing_hypotheses": []
+  },
+  "unresolved": [],
+  "stop_or_continue_reason": null
+}

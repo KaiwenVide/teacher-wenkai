@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "status": "draft",
+  "question": "",
+  "working_title": "",
+  "why_it_matters": "",
+  "assumption_challenged": "",
+  "source_audit": [],
+  "competing_hypotheses": [],
+  "discriminating_evidence_or_experiment": "",
+  "falsifier": "",
+  "pilot_plan": "",
+  "required_resources": [],
+  "strongest_reviewer_objection": "",
+  "decision_gates": {"continue": "", "stop_or_pivot": ""},
+  "next_action": "",
+  "priority_rationale": {},
+  "limitations": []
+}

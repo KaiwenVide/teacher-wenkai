@@ -1,5 +1,5 @@
 {
-  "version": "3.0.0",
+  "version": "3.1.0",
   "algorithm": "sha256",
   "scope": "Reviewed distribution files. This generated manifest excludes itself and runtime caches; integrity only, not a signature or legal certification.",
   "files": [
@@ -25,13 +25,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4435,
-      "sha256": "9f426a60eeff03ad251471b549748b5fc83278ca0b537cdd5ac803b754c97ce6"
+      "bytes": 4729,
+      "sha256": "9da229aad262d013d610aab6a80ebf07c1a32aafb8ce8bc5fec7663f38df8f9a"
     },
     {
       "path": "SKILL.md",
-      "bytes": 5851,
-      "sha256": "eb028b4aeecabea59233519680fc12145da62cb3f18bb1e414daded1101b6a15"
+      "bytes": 6265,
+      "sha256": "9711b7d7d591f808685e08e2d385fc2a19aba0b4ca4ad05cad39aca8a511f5ed"
     },
     {
       "path": "agents/openai.yaml",
@@ -69,6 +69,11 @@
       "sha256": "915aa432585c21d79fa36cbbc8886ebd9c88327442d51621e7e7ba7667a29b8a"
     },
     {
+      "path": "audit/PERSONALIZATION.md",
+      "bytes": 3234,
+      "sha256": "948e567426a411fd99baeed98c198ce673cac17dd302bafa192cfa4804906b46"
+    },
+    {
       "path": "audit/VALIDATION.md",
       "bytes": 4285,
       "sha256": "801ae1e89cdd5a1d05584b4cbc1f57836db4cf4bd6d6b4919d8c85a1e6f9e97c"
@@ -85,8 +90,13 @@
     },
     {
       "path": "audit/source-screening.json",
-      "bytes": 461,
-      "sha256": "5a9436f49630a44dd0ae8af6b1613326a63054fc6f6c88f0ed7b19c7fc2c3a27"
+      "bytes": 489,
+      "sha256": "4007764ee0f022c6042bc230d4f25cfcb94a0dfc2b6e00bf369d6917e2e72dcf"
+    },
+    {
+      "path": "references/biology-preferences.md",
+      "bytes": 6875,
+      "sha256": "baaf4fab33948e1ae309391de46340ffa0e67e3093c534c0c6bb95d3ea62fd72"
     },
     {
       "path": "references/cli.md",
@@ -226,7 +236,7 @@
     {
       "path": "scripts/wkr/__init__.py",
       "bytes": 100,
-      "sha256": "cc4d210f2533566bd1e01024e9b075c29cfd766b783b7934e6e7930455b55de0"
+      "sha256": "c5b28331d840f0113961d990bd6cb9fc599375441b28c097238f530fab180314"
     },
     {
       "path": "scripts/wkr/academic.py",

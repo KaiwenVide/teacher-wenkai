@@ -25,6 +25,8 @@ description: Wenkai 的科研伙伴。从常规实验及组学原始数据开展
 | 研究项目、实验设计、论文/方案写作 | [学术项目](references/workflows/academic-project.md) | study-plan、experiment-check、manuscript-build |
 | 已独立安装的专业全文服务 | [外部服务](references/workflows/backends.md) | paperclip、scansci-request |
 
+处理生物学研究时，沿用 [Wenkai 的研究偏好](references/biology-preferences.md)：先读已有材料与最新修正，再按问题选择检索深度、数据核验和实验优先级。复杂机制、组学、定量/制剂、综述或论文任务读取该指引；简单术语问题直接作答。偏好是可被当前指令覆盖的默认值，不把旧项目假说或模型固化为通用要求。
+
 ## 研究执行
 
 1. 固定问题、材料范围、设计、交付物与已确认的约束。优先读用户的新数据和修正。

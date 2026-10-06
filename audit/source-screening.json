@@ -1,5 +1,5 @@
 {
-  "checked_files": 72,
+  "checked_files": 76,
   "known_comparison_files": 182,
   "exact_matches": [],
   "python_token_overlap_window": 60,
@@ -8,6 +8,7 @@
   "forbidden_files": [],
   "broken_local_links": [],
   "scope": "Local known-source screening, not a legal opinion or an internet-wide uniqueness guarantee.",
-  "screened_before_generated_audit_manifests": true,
-  "checked_at": "2026-10-05T18:32:04.659449+00:00"
+  "checked_at": "2026-10-06T03:47:07.033258+00:00",
+  "version": "3.1.0",
+  "generated_manifest_integrity_checked_separately": true
 }

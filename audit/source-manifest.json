@@ -1,5 +1,5 @@
 {
-  "version": "3.1.0",
+  "version": "3.1.1",
   "algorithm": "sha256",
   "scope": "Reviewed distribution files. This generated manifest excludes itself and runtime caches; integrity only, not a signature or legal certification.",
   "files": [
@@ -26,7 +26,7 @@
     {
       "path": "README.md",
       "bytes": 4729,
-      "sha256": "9da229aad262d013d610aab6a80ebf07c1a32aafb8ce8bc5fec7663f38df8f9a"
+      "sha256": "784547888d27290ab55a78066f140871f1bd5b5b4f68f77506b6b3c195ac3695"
     },
     {
       "path": "SKILL.md",
@@ -70,8 +70,8 @@
     },
     {
       "path": "audit/PERSONALIZATION.md",
-      "bytes": 3234,
-      "sha256": "948e567426a411fd99baeed98c198ce673cac17dd302bafa192cfa4804906b46"
+      "bytes": 3427,
+      "sha256": "b61721e34426931106e2b06a9a9957c52632e858c210d7dd5b1af1710d0048ed"
     },
     {
       "path": "audit/VALIDATION.md",
@@ -91,7 +91,7 @@
     {
       "path": "audit/source-screening.json",
       "bytes": 489,
-      "sha256": "4007764ee0f022c6042bc230d4f25cfcb94a0dfc2b6e00bf369d6917e2e72dcf"
+      "sha256": "5a4b1a6d22bd0cb69e39cfa25d8a5aba3b43b30562c5fc32ca5e34b94c845ede"
     },
     {
       "path": "references/biology-preferences.md",
@@ -236,7 +236,7 @@
     {
       "path": "scripts/wkr/__init__.py",
       "bytes": 100,
-      "sha256": "c5b28331d840f0113961d990bd6cb9fc599375441b28c097238f530fab180314"
+      "sha256": "f71a2bf8945c62d8b714642b7279139b373b8854ad28bc1bc7290d2a21fa8847"
     },
     {
       "path": "scripts/wkr/academic.py",
@@ -245,8 +245,8 @@
     },
     {
       "path": "scripts/wkr/adapters.py",
-      "bytes": 3070,
-      "sha256": "6913a1d4bedc5d62b4f596c075d08b8e8e26caace819e8a4abc29bda2010d211"
+      "bytes": 3100,
+      "sha256": "eda9b5793c1600b46bf7c5345bd9baa038ff498582e1a2c646beaa756aee1265"
     },
     {
       "path": "scripts/wkr/bibliography.py",

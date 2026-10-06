@@ -4,6 +4,7 @@ import os
 import shutil
 import subprocess
 import sys
+from . import __version__
 from .common import SKILL_ROOT
 from .providers import PROVIDERS
 from .lifesciences import catalog
@@ -15,7 +16,7 @@ def doctor():
     database = catalog()
     counts = {key: sum(v['backend'] == key for v in database['providers'].values()) for key in ['native']}
     return {'skill_root': str(SKILL_ROOT), 'python': sys.executable, 'python_version': sys.version.split()[0],
-            'skill_version': '3.0.0', 'modules': modules, 'executables': binaries, 'database_backends': counts,
+            'skill_version': __version__, 'modules': modules, 'executables': binaries, 'database_backends': counts,
             'credential_variable_present': {k: bool(os.environ.get(k)) for k in ['NCBI_API_KEY','NCBI_EMAIL','OPENALEX_API_KEY','CROSSREF_MAILTO','UNPAYWALL_EMAIL','S2_API_KEY','CORE_API_KEY','PAPERCLIP_API_KEY']},
             'literature_api_providers': len(PROVIDERS), 'network_or_auth_checked': False,
             'note': 'Installed software is not verified authentication or a successful network request. Only environment variable presence is inspected.'}

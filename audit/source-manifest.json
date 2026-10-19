@@ -1,5 +1,5 @@
 {
-  "version": "3.1.1",
+  "version": "3.2.0",
   "algorithm": "sha256",
   "scope": "Reviewed distribution files. This generated manifest excludes itself and runtime caches; integrity only, not a signature or legal certification.",
   "files": [
@@ -10,8 +10,13 @@
     },
     {
       "path": "AUTHORSHIP.md",
-      "bytes": 2119,
-      "sha256": "18a13bdd758ab1e33d0899a2f6d8ee7f43063fee7f631da8a0c935649cd3d766"
+      "bytes": 2284,
+      "sha256": "a99591e189c28693eebb6b182eb05c559a26b9555236e1a6f3a1adbcc9d06558"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1849,
+      "sha256": "2bc36dfb415b2e7e545e1553014a791d1570b9c8d61c3368fbd5fbb46187b9d4"
     },
     {
       "path": "DEPENDENCIES.md",
@@ -20,23 +25,28 @@
     },
     {
       "path": "LICENSE",
-      "bytes": 1385,
-      "sha256": "d8a895faab5cf08723b620ca86114bf0873e81709ca0c1ef37c37c712ad85ca1"
+      "bytes": 1063,
+      "sha256": "32d6f62b34f60bab615c096f9ded6ed188be94befd5b323aa35042536f41990a"
     },
     {
       "path": "README.md",
-      "bytes": 4729,
-      "sha256": "784547888d27290ab55a78066f140871f1bd5b5b4f68f77506b6b3c195ac3695"
+      "bytes": 5062,
+      "sha256": "9fe5a8d4b6ab0c2098dfc46f837b5ca0118b403b6e0b8feff4368bac6f93367b"
     },
     {
       "path": "SKILL.md",
-      "bytes": 6265,
-      "sha256": "9711b7d7d591f808685e08e2d385fc2a19aba0b4ca4ad05cad39aca8a511f5ed"
+      "bytes": 6714,
+      "sha256": "dae175735a8aa9236968a841fcd8f4b0fe0ed6a0f9027c62c293edc7571de15b"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 2129,
+      "sha256": "3ac3af8b3a3cecac982f321ca37ba6d41b100b5143eb92552f63766db76c9e65"
     },
     {
       "path": "agents/openai.yaml",
-      "bytes": 449,
-      "sha256": "0165166ab2cf3e19e7e6a92648c158cb4d8721f49999a4b93b255b1f3875f17b"
+      "bytes": 441,
+      "sha256": "8d880c2ad87e470ff0d46ea3fc8f7fba00e5e17b5fe56707ff3f7856dc2ca117"
     },
     {
       "path": "assets/examples/mixed-demo/study.json",
@@ -74,6 +84,11 @@
       "sha256": "b61721e34426931106e2b06a9a9957c52632e858c210d7dd5b1af1710d0048ed"
     },
     {
+      "path": "audit/RELEASE-3.2.0.md",
+      "bytes": 3942,
+      "sha256": "099337aac46331aeb9fa7b7c2158d91ff8964c61e2894a1e9dcb968c74ca6792"
+    },
+    {
       "path": "audit/VALIDATION.md",
       "bytes": 4285,
       "sha256": "801ae1e89cdd5a1d05584b4cbc1f57836db4cf4bd6d6b4919d8c85a1e6f9e97c"
@@ -91,7 +106,7 @@
     {
       "path": "audit/source-screening.json",
       "bytes": 489,
-      "sha256": "5a4b1a6d22bd0cb69e39cfa25d8a5aba3b43b30562c5fc32ca5e34b94c845ede"
+      "sha256": "c2d24d13da85136b94aeffb74c7b135a67899865ba5c27f9883afaa8cf25ca2b"
     },
     {
       "path": "references/biology-preferences.md",
@@ -100,8 +115,8 @@
     },
     {
       "path": "references/cli.md",
-      "bytes": 4646,
-      "sha256": "f09786d76bcce93ee21ff02a97a2b5c2d927ea129a1a5cac58b1ffdbd703dc3f"
+      "bytes": 5332,
+      "sha256": "bddd5c6755e86015ef5def7828c47234e10fdbeedd41b5e5896132ee9ea97d39"
     },
     {
       "path": "references/data-contracts.md",
@@ -109,9 +124,14 @@
       "sha256": "30d25145e94adfe3bce7c35ba38a82da416df8ff5b8d230cc62823360586772d"
     },
     {
+      "path": "references/installation.md",
+      "bytes": 2910,
+      "sha256": "2fc7e7e272704f1c1809461cfd94ae92b610f6b868c3b0dd72bec9f0d8cae1c5"
+    },
+    {
       "path": "references/integration-map.md",
-      "bytes": 3484,
-      "sha256": "8e9dbafbfa4d381fd42e698a24f89edbe306eeebe8d4c795b196eda62d90a15c"
+      "bytes": 3681,
+      "sha256": "3ece754cec3d5b8981aa97f9454da5cc28b9955f16b0c287d5a82b987f351eca"
     },
     {
       "path": "references/life-sciences-catalog.json",
@@ -134,6 +154,11 @@
       "sha256": "e64fe63c76f564f836178a04c8dd3954d3435b3a74b488a00ebbc428a889f5ca"
     },
     {
+      "path": "references/workflows/cns-monthly.md",
+      "bytes": 4887,
+      "sha256": "12aeab73cbcf8f71b4872b08a9fce38a6aa1c0d15575357a2633a59ec295314e"
+    },
+    {
       "path": "references/workflows/data-driven-research.md",
       "bytes": 4665,
       "sha256": "5d9c5b335791072e17563a792fef4a970cb66c44b0ff72c699e989f47ce7e766"
@@ -152,6 +177,11 @@
       "path": "references/workflows/life-sciences.md",
       "bytes": 3106,
       "sha256": "f0ea29472911efeaccf5dbca0817934b5ebd952f1354654566ff171b21655e65"
+    },
+    {
+      "path": "references/workflows/paper-reverse.md",
+      "bytes": 3487,
+      "sha256": "d0ab3dd22c644cd8eeb6541b29eaf33f06d951d0dd5f8364141c5aae250caddf"
     },
     {
       "path": "references/workflows/peer-review.md",
@@ -220,8 +250,8 @@
     },
     {
       "path": "scripts/research.py",
-      "bytes": 13542,
-      "sha256": "4f7cd06a1b459af2bd9a23e8f8f41cc3c3e9db492a48c36e26bbc992352125d6"
+      "bytes": 15100,
+      "sha256": "7a38c32dcbce69f3a4ce701d56bd40ca751da306a4cab71a2b72125d9ed56e0d"
     },
     {
       "path": "scripts/run.py",
@@ -236,7 +266,7 @@
     {
       "path": "scripts/wkr/__init__.py",
       "bytes": 100,
-      "sha256": "f71a2bf8945c62d8b714642b7279139b373b8854ad28bc1bc7290d2a21fa8847"
+      "sha256": "b276792937b502070dfa8987a1d884ecfbc4f59eb3a2a66f7d75f74e4818f28e"
     },
     {
       "path": "scripts/wkr/academic.py",
@@ -257,6 +287,11 @@
       "path": "scripts/wkr/claims.py",
       "bytes": 5262,
       "sha256": "63f295b6e3555c5e71cd2148b2115c9193927a17d45cba781cae108d021ad676"
+    },
+    {
+      "path": "scripts/wkr/cns_monthly.py",
+      "bytes": 20181,
+      "sha256": "df4212e37a935038860f42d381ee90e05862661e44f1a8c27033607cb557be73"
     },
     {
       "path": "scripts/wkr/common.py",
@@ -324,6 +359,11 @@
       "sha256": "cc43cb1155d518169becb624523667cdbf3c579f5d3055443dc54b6dd5641658"
     },
     {
+      "path": "scripts/wkr/paper_reverse.py",
+      "bytes": 10856,
+      "sha256": "6e04bd4afb435196afae715c883eae7b22d4d7b03f8ef9438253fe31de6ad608"
+    },
+    {
       "path": "scripts/wkr/pipeline.py",
       "bytes": 2928,
       "sha256": "35d458502190ac72a961adac79a34bb654d7d1a497a5c05e741eef5bd132c721"
@@ -372,6 +412,11 @@
       "path": "tests/test_native_release.py",
       "bytes": 13986,
       "sha256": "90af966724325cd23c56b5fcc283fe09f24880f3a5968684a452823b7c3c9a68"
+    },
+    {
+      "path": "tests/test_research_modes.py",
+      "bytes": 17018,
+      "sha256": "45f734cdc58e966c66a00fafc46bad45eef90f69f31e6c7cb6f7545993ed04c5"
     },
     {
       "path": "tests/test_workflows.py",

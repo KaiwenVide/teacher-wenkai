@@ -57,3 +57,14 @@ python3 SKILL_DIR/scripts/run.py jats article.xml --text-only
 可选凭据只通过环境变量：NCBI_API_KEY、NCBI_EMAIL、OPENALEX_API_KEY、CROSSREF_MAILTO、UNPAYWALL_EMAIL、S2_API_KEY、CORE_API_KEY、ELSEVIER_API_KEY、ELSEVIER_INST_TOKEN、WILEY_TDM_TOKEN、PAPERCLIP_API_KEY。不要把它们写进公开配置、命令参数或提交记录。
 
 离线回归：`python3 -m unittest discover -s SKILL_DIR/tests -v`。精确验证结果见 audit/VALIDATION.md。
+
+## 论文逆向与月度 CNS
+
+```bash
+python3 SKILL_DIR/scripts/run.py paper-reverse-init paper.pdf supplement.pdf --render-pages --out NEW_REVERSE_DIR
+python3 SKILL_DIR/scripts/run.py paper-reverse-report NEW_REVERSE_DIR --out NEW_REVERSE_REPORT.md
+python3 SKILL_DIR/scripts/run.py cns-month --out NEW_MONTH_DIR
+python3 SKILL_DIR/scripts/run.py cns-report NEW_MONTH_DIR --out NEW_MONTH_REPORT.md
+```
+
+初始化与采集之后须实际阅读并填写 evidence/claims 或 screening/synthesis，再渲染报告；命令不会用模板自动推断科研结论。完整格式及基线比较要求见 [论文逆向](workflows/paper-reverse.md) 和 [月度 CNS](workflows/cns-monthly.md)。

@@ -55,6 +55,10 @@ def parser():
     x=s.add_parser('study-plan'); x.add_argument('question'); x.add_argument('--out',type=Path,required=True); x.add_argument('--analysis',type=Path)
     x=s.add_parser('experiment-check'); x.add_argument('plan',type=Path); x.add_argument('--out',type=Path)
     x=s.add_parser('manuscript-build'); x.add_argument('plan',type=Path); x.add_argument('--claims',type=Path,required=True); x.add_argument('--out',type=Path,required=True)
+    x=s.add_parser('paper-reverse-init'); x.add_argument('sources',nargs='+',type=Path); x.add_argument('--question',default=''); x.add_argument('--doi',default=''); x.add_argument('--render-pages',action='store_true'); x.add_argument('--out',type=Path,required=True)
+    x=s.add_parser('paper-reverse-report'); x.add_argument('directory',type=Path); x.add_argument('--out',type=Path,required=True)
+    x=s.add_parser('cns-month'); x.add_argument('--month'); x.add_argument('--max-pages',type=int,default=20); x.add_argument('--page-size',type=int,default=100); x.add_argument('--out',type=Path,required=True)
+    x=s.add_parser('cns-report'); x.add_argument('directory',type=Path); x.add_argument('--baseline',type=Path); x.add_argument('--out',type=Path,required=True)
     s.add_parser('database-list')
     x=s.add_parser('database'); x.add_argument('provider'); x.add_argument('--request',type=Path,required=True); x.add_argument('--out',type=Path)
     x=s.add_parser('enrich'); x.add_argument('--selected',type=Path,required=True); x.add_argument('--universe',type=Path,required=True); x.add_argument('--gmt',type=Path,required=True); x.add_argument('--out',type=Path)
@@ -68,6 +72,18 @@ def main(argv=None):
     if argv and argv[0] in PASSTHROUGH: return run_adapter(argv[0],argv[1:])
     a=parser().parse_args(argv); c=a.cmd; result=None; code=0; save_result=True
     if c=='doctor': result=doctor()
+    elif c=='paper-reverse-init':
+        from wkr.paper_reverse import prepare_reverse
+        result=prepare_reverse(a.sources,a.out,a.question,a.doi,a.render_pages); save_result=False
+    elif c=='paper-reverse-report':
+        from wkr.paper_reverse import render_reverse
+        result=render_reverse(a.directory,a.out); save_result=False; code=0 if result['valid'] else 2
+    elif c=='cns-month':
+        from wkr.cns_monthly import collect_month
+        result=collect_month(a.month,a.out,a.max_pages,a.page_size); save_result=False; code=0 if result['coverage']=='complete_for_queries' else 2
+    elif c=='cns-report':
+        from wkr.cns_monthly import render_month
+        result=render_month(a.directory,a.out,a.baseline); save_result=False; code=0 if result['valid'] else 2
     elif c=='data-profile':
         from wkr.experiment_io import profile
         result=profile(a.input,a.sheet,a.header_row)

@@ -20,6 +20,7 @@
 | nature-reviewer | 冻结材料、独立上下文报告、综合前完整性检查 | 无独立执行条件时不能声称互盲 |
 | Life Sciences Databases | 44 原生 API 协议及变异/组装解析 | 不执行原插件客户端；只读、限量、显式失败；不是全端点验证 |
 | Data Analytics | 生物学单位 QC、统计模型、图表、重算 Notebook | 为实验/组学重新实现；不以商业 KPI 代替科学终点 |
+| REA 的证据驱动调查原则 | 原创 paper_reverse、cns_monthly 与相应工作流 | 逆向重建科研证据链、复现方案和来源关联月报；无 REA 引擎、MCP 或代码依赖 |
 | Academic Research Skills | 学术项目、实验设计、论断关联稿件与修订路线 | 共用已有检索/精读/审稿，新增 research-plan、experiment-plan、manuscript-plan 实际文件 |
 
 已有原创文献和数据模块保留，经新版本测试。此前个人快照中复制的解析器、引用脚本、数学检查器、Node 下载器、数据库客户端及说明文档不进入此发布版。替代者是本项目的 format_tools、retrieval_tools、database_protocols、lifesciences 和对应原创文档。

@@ -2,20 +2,22 @@
 
 个人科研技能：从原始实验数据到统计结果、数据库查询、原始文献、可证伪假设和证据关联写作。面向 Codex，中文优先。
 
-版本 **3.1.1**。公开仓库不采用开源许可；查看和 GitHub Fork 依平台条款进行，其他用途须取得权利人许可。以下运行指引供权利人或另获授权的使用者使用，详见 [LICENSE](LICENSE)。
+版本 **3.2.0** · [MIT License](LICENSE) · [安装与更新](references/installation.md) · [贡献指南](CONTRIBUTING.md)
 
-## 能做什么
+项目自身代码、技能指引和文档按 MIT 开源，Copyright (c) 2026 Wenkai。允许使用、修改、分发及商用，复制或实质性使用须保留版权和许可声明。第三方依赖、服务及论文内容各自保留原有条款，见 [第三方声明](THIRD_PARTY_NOTICES.md)。
+
+## for what
 
 - 文献：7 个统一检索来源、18 个文献 API 入口、DOI/参考文献核验、CNS 范围筛选、RIS/BibTeX/ENW/RDF 导出、带排除理由的综述台账。
+- 论文逆向：从正文、图表与补充材料重建问题—实验—证据—论断链，追踪缺失条件、竞争解释与最小判别实验，输出可复核的复现方案。
+- 月度 CNS：按 Nature、Science、Cell 主刊 ISSN 和首次发表月份分页检索，逐篇筛选生命科学文章，实际研读后形成来源关联的趋势报告；支持用户授权的月度自动运行。
 - 全文：OA 和授权 URL 下载，出版商凭据接口，文件检查、哈希及续跑；PDF/JATS/Word/PPT 的来源定位，中英对照阅读包与公式结构检查。
 - 数据：CSV/TSV/XLSX、长表/宽表、技术与生物重复、配对/批次、qPCR、连续组学矩阵、PyDESeq2 计数模型、实测背景 GMT 富集；PNG/SVG 与可执行 Notebook。
 - 后续研究：从经过质量筛选的差异、趋势和组内关联出发，实际查询文献和公共数据库；预算、失败、重试与访问层级可追踪。
 - 生命科学：44 个数据库的项目原生处理器（含已停用 eQTL REST 的状态处理和本地表替代），覆盖 REST、GraphQL、SPARQL、PheWAS、eQTL、临床和组学资源；不需要安装原数据库插件。
 - 学术项目：研究问题、证据矩阵、实验设计检查、研究阶段计划、证据关联论文草稿与评审材料。Academic Research Skills 的重叠功能已经整合，写作和实验设计补入独立实现。
 
-“原生接口”表示本仓库有实现，不表示所有远程服务随时可用，也不表示已验证每个端点。最新实际检测范围见 [检测报告](audit/PERSONALIZATION.md)。细分能力与局限见 [功能映射](references/integration-map.md)。
-
-已加入 [生物学研究偏好](references/biology-preferences.md)，将可访问历史中的提问方式、来源定位要求、实验优先级及交付偏好用于当前任务。它不宣称覆盖账号全年记录，也不在公开包中保存聊天原文或具体未发表课题。
+加入 [生物学研究偏好](references/biology-preferences.md)，将可访问历史中的提问方式、来源定位要求、实验优先级及交付偏好用于当前任务。它不宣称覆盖账号全年记录，也不在公开包中保存聊天原文或具体未发表课题。
 
 ## 安装与调用
 
@@ -45,12 +47,12 @@ python3 SKILL_DIR/scripts/run.py notebook-execute NEW_RUN_DIR/analysis.ipynb
 
 将 `SKILL_DIR` 替换为技能目录，输出目录必须是新的。去掉 `--offline` 将使用示例中明确标注的公开实体进行网络检索。配置须按真实设计填写，不能直接套用演示组别或样本量。原始测量值和样本身份不作为自动检索内容上传。
 
-## 证据边界
-
-统计软件测试只验证实现；关联不证明机制，数据库注释不证明通路激活，检索候选不等于论文支持。论文读取、图表解释、语义核验及科学推理由使用此技能的 Codex 完成，并保留原文定位。原始计数模型不等于 FASTQ 预处理；单细胞、质谱原始谱图及复杂纵向设计需另行选定适当流程。
-
 ## 权利与来源
 
-Copyright (c) 2026 Wenkai. All rights reserved.
+Copyright (c) 2026 Wenkai. Licensed under MIT.
 
 本项目由 Wenkai 指导并借助 AI 开发。第三方技能作为功能需求的参照，未作为代码或文档组件分发；不能据此承诺全球范围的绝对独创性或司法认定。审查方法和范围见 [AUTHORSHIP.md](AUTHORSHIP.md)。数据库内容、论文及运行依赖不属于本项目的权利声明。
+
+参照 [REA](https://github.com/morluto/rea) 的证据驱动调查和开源组织模式，使用独立编写的科研工作流。详见 [论文逆向](references/workflows/paper-reverse.md)、[月度研读](references/workflows/cns-monthly.md)、[第三方声明](THIRD_PARTY_NOTICES.md) 和 [贡献指南](CONTRIBUTING.md)。
+
+本版本的实际验证范围见 [3.2.0 检测报告](audit/RELEASE-3.2.0.md)。
